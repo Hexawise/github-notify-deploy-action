@@ -1,31 +1,9 @@
-# Honeybadger Notify Deploy Action
+# github-notify-deploy-action
 
-Sending deployment notifications to Honeybadger allows your team to associate spikes in errors to changes that were deployed.
+> **This repository has moved to a new public location.**
 
-#### Inputs
+The source code for this project is now maintained at:
 
-Use these inputs to customise the action.
+## [https://github.com/sembi-oss/github-notify-deploy-action](https://github.com/sembi-oss/github-notify-deploy-action)
 
-Input Name | Default | Required? | Description
------------- | ------------- | ------------ | -------------
-api_key | N/A | Y | The Honeybadger project API key
-environment | production | N | The deployment environment
-endpoint | https://api.honeybadger.io/v1/deploys | N | The deploy submission endpoint. Only used for testing
-
-#### Example
-
-```yaml
-on:
-  push:
-    branches:
-      - master
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v1
-    - uses: honeybadger-io/github-notify-deploy-action@v1
-      with:
-        api_key: ${{ secrets.HONEYBADGER_API_KEY }}
-```
+Please update your bookmarks, forks, and any references to point to the new address.
